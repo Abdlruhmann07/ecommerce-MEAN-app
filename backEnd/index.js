@@ -34,7 +34,7 @@ app.use(userRoutes);
 // Database connect
 mongoose
   .connect(
-    `mongodb+srv://${process.env.Database_username}:${process.env.Database_Passwrod}@cluster0.dgihmg1.mongodb.net/ecommerce-website`,
+    `mongodb+srv://dodgersherif124:Dodger.12345@cluster0.dgihmg1.mongodb.net/ecommerce-website`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
