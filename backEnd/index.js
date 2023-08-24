@@ -47,7 +47,7 @@ mongoose
     console.log(err);
   });
 
-app.use(cors({ origin: "http://localhost:4200", credentials: true }));
+app.use(cors());
 
 // test route (delete me)
 // app.get("*", checkUser);
