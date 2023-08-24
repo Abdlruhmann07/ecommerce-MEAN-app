@@ -48,7 +48,7 @@ mongoose
   });
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://ecommerce-mean-app-bpsh.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
