@@ -50,10 +50,10 @@ mongoose
 app.use(cors({ origin: "http://localhost:4200", credentials: true }));
 
 // test route (delete me)
-app.get("*", checkUser);
-app.get("/testAuth", requireAuth, (req, res) => {
-  res.render("testAuth");
-});
+// app.get("*", checkUser);
+// app.get("/testAuth", requireAuth, (req, res) => {
+//   res.render("testAuth");
+// });
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}💻💻`);
