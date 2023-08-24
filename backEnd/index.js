@@ -15,7 +15,7 @@ const loginRoutes = require("./routes/login");
 const logoutRoutes = require("./routes/logout");
 const productRoutes = require("./routes/products");
 // Using important middlewares
-const { requireAuth, checkUser } = require("./middlewares/authMiddleware");
+// const { requireAuth, checkUser } = require("./middlewares/authMiddleware");
 
 app.use(cors());
 app.use(bodyparser.urlencoded({ extended: true }));

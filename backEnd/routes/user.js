@@ -8,7 +8,7 @@ const Product = require("../models/product");
 const User = require("../models/user");
 const Order = require("../models/order");
 // Importing middlewares
-const { requireAuth } = require("../middlewares/authMiddleware");
+// const { requireAuth } = require("../middlewares/authMiddleware");
 
 // current user
 var currentUser = {

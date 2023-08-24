@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 // router requirements
-const jwt = require("jsonwebtoken");
+// const jwt = require("jsonwebtoken");
 // Importing models
 const User = require(`../models/user`);
 
