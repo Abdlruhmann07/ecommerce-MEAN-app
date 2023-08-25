@@ -6,8 +6,8 @@ import { AuthService } from './auth.service';
   providedIn: 'root',
 })
 export class UserService {
-  constructor(public http: HttpClient, private authService: AuthService) {}
-  urlBase = 'http://localhost:3000';
+  constructor(public http: HttpClient, private authService: AuthService) { }
+  urlBase = 'https://ecommerce-mean-app.vercel.app';
 
   signUp(userName: string, email: string, password: string): Observable<any> {
     return this.http.post(`${this.urlBase}/signup`, {
