@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  constructor(public http: HttpClient) {}
-  urlBase = 'http://localhost:3000';
+  constructor(public http: HttpClient) { }
+  urlBase = 'https://ecommerce-mean-app.vercel.app/';
 
   getAllProduct(pageNumber: number, page_size: Number): Observable<any> {
     return this.http.get(
