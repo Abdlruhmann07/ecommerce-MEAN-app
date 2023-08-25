@@ -51,7 +51,7 @@ router.post("/signup", async (req, res) => {
     });
     // const token = createToken(newUser._id);
     // res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
-    res.status(201).json({ user: newUser._id, token: token });
+    res.status(201).json({ user: newUser._id });
   } catch (err) {
     const Errors = handleErrors(err);
     res.status(400).json({ Errors });
