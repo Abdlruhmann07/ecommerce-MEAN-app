@@ -31,12 +31,12 @@ const handleErrors = (err) => {
 };
 
 // Generate web tokens function
-const maxAge = 3 * 24 * 60 * 60;
-const createToken = (id) => {
-  return jwt.sign({ id }, "dodger secret dodger", {
-    expiresIn: maxAge,
-  });
-};
+// const maxAge = 3 * 24 * 60 * 60;
+// const createToken = (id) => {
+//   return jwt.sign({ id }, "dodger secret dodger", {
+//     expiresIn: maxAge,
+//   });
+// };
 
 //Routes
 // Register Route handling
@@ -49,7 +49,7 @@ router.post("/signup", async (req, res) => {
       email: email,
       password: password,
     });
-    const token = createToken(newUser._id);
+    // const token = createToken(newUser._id);
     // res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
     res.status(201).json({ user: newUser._id, token: token });
   } catch (err) {
