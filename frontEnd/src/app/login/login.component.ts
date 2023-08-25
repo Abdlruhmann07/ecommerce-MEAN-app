@@ -14,9 +14,9 @@ export class LoginComponent {
     private userServ: UserService,
     private router: Router,
     private authService: AuthService
-  ) {}
+  ) { }
   ermsg: string = '';
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onLogin(formData: NgForm) {
     if (formData.invalid) {
@@ -32,7 +32,7 @@ export class LoginComponent {
           this.router.navigate(['/shop']);
         },
         error: () => {
-          this.ermsg = 'Emial is Wrong ';
+          this.ermsg = 'Emial or Password is incorrect ';
         },
       });
   }
