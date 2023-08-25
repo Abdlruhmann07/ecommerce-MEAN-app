@@ -32,7 +32,7 @@ export class LoginComponent {
           this.router.navigate(['/shop']);
         },
         error: () => {
-          this.ermsg = 'Emial or Password is incorrect ';
+          this.ermsg = 'email or password is incorrect ';
         },
       });
   }
